@@ -142,7 +142,7 @@ button:active{
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bannercut-about1.jpg);
+        background-image: url(../picture/bannercut-about1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

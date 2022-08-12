@@ -112,7 +112,7 @@
 }
 
 .bgImg{
-    background-image: url(./picture/bgimg-mb-1.jpg);
+    background-image: url(../picture/bgimg-mb-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -127,7 +127,7 @@
     max-width: 1200px;
 }
 .bgImg{
-    background-image: url(./picture/bgimg.png);
+    background-image: url(../picture/bgimg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -159,7 +159,7 @@
         justify-content: center;
     }
     .bgImg{
-        background-image: url(./picture/bgimg-mb-1.jpg);
+        background-image: url(../picture/bgimg-mb-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

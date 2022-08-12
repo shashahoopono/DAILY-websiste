@@ -155,7 +155,7 @@ textarea:focus{
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bannecut-contact.jpg);
+        background-image: url(../picture/bannecut-contact.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

@@ -1,6 +1,6 @@
 /* ------ banner ------ */
 .smallScreen{
-    background-image: url(/picture/mbbannernews.png);
+    background-image: url(../picture/mbbannernews.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ button:active{
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bann-locationcut.jpg);
+        background-image: url(../picture/bann-locationcut.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

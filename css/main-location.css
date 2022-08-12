@@ -1,6 +1,6 @@
 /* banner */
 .smallScreen{
-    background-image: url(/picture/mbbann-location.png);
+    background-image: url(../picture/mbbann-location.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bann-locationcut.jpg);
+        background-image: url(../picture/bann-locationcut.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
