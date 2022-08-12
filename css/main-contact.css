@@ -1,13 +1,27 @@
 /* banner */
 .smallScreen{
-    background-image: url(/picture/mbbanner-contact.png);
+    background-image: url(../picture/mbbanner-contact.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
 }
 .bigScreen{
     display: none;
+}
+
+/* 行動版圖上文字 */
+.bannerTxt {
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    margin: 50% 0;
+}
+.bannerTxt h2{
+    color: #fff;
+    text-shadow: 0 0 0.1em rgb(37, 35, 35), 0 0 0.2em rgb(32, 29, 29);
+    text-align: center;
+    display: block;
 }
 
 /* path麵包屑 */
@@ -52,14 +66,6 @@
     color: #D0CDC2;
     position: absolute;
     left: 0;
-}
-/* 聯絡我們 */
-/* 表單 */
-@media screen and (min-width:1200px) {
-    .width{
-        max-width: 1200px;
-        margin: auto;
-    }
 }
 form, .writing{
     display: flex;
@@ -144,6 +150,8 @@ textarea:focus{
     background-color: #43649B;
     cursor: pointer;
 }
+/* 聯絡我們 */
+
 @media screen and (min-width:992px) {
     .width{
         max-width: 800px;

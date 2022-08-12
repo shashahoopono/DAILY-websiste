@@ -54,6 +54,26 @@
     line-height: 1.5;
 }
 
+/* 行動裝置 */
+@media screen and (max-width: 991px){
+    
+    /* 漂浮影格 */
+    @keyframes float{
+        0% {
+            transform: translate(0, 0);
+        }
+        
+        30% {
+            transform: translate(0, -2px);
+        }
+        70% {
+            transform: translate(0, 5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
 
 
 

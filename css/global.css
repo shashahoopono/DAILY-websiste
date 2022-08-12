@@ -86,15 +86,15 @@ strong{
 /* ------ GotoTopbtn ------ */
 .backToTop{
     position: fixed;
-    width:1em;
+    width:2em;
     height:4em;
-    right: 1em;
+    right: 2em;
     bottom: 2em;
     text-align: center;
     line-height: 0.8em;
     font-weight: 600;
     color: #211E55;
-    margin-bottom: 5em;
+    margin-bottom: 5em 0;
     animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
     z-index: 1;
     opacity: 1;
@@ -109,7 +109,9 @@ strong{
 .backToTop p{
     font-size: 0.5em;
     font-weight: 500px;
-    text-shadow: #FFF 0.1em 0.1em 0.2em
+    text-shadow: #FFF 0.1em 0.1em 0.2em;
+    margin-top: 5px;
+    
 }
 .backToTop img {
     width:30px;
@@ -235,15 +237,16 @@ strong{
 
 @media screen and (min-width:992px) {
     .backToTop {
-        margin: auto;
-        width: 4em;
+        width: 3em;
         height: 4em;
+        right: 2em;
+        bottom: 2em;
         font-size: 0.8em;
         text-align: center;
         line-height: 1.2em;
         font-weight: 600;
         color: #211E55;
-        margin:5em auto 7em;
+        z-index: 1;
         animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
     }
     .backToTopNone{

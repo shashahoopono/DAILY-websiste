@@ -207,10 +207,4 @@
         width: 100%;
         left: 0;
     }
-    .bgImg{
-        background-image: url(../picture/bgimg-mb-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height:100vh;
-    }
 }

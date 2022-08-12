@@ -4,11 +4,26 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
 }
 .bigScreen{
     display: none;
 }
+
+/* 行動版圖上文字 */
+.bannerTxt {
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    margin: 50% 0;
+}
+.bannerTxt h2{
+    color: #fff;
+    text-shadow: 0 0 0.1em rgb(37, 35, 35), 0 0 0.2em rgb(32, 29, 29);
+    text-align: center;
+    display: block;
+}
+
 /* 分類目錄 */
 
 .catalog{
