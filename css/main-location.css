@@ -1,0 +1,68 @@
+/* banner */
+.smallScreen{
+    background-image: url(/picture/mbbann-location.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+.bigScreen{
+    display: none;
+}
+
+.map {
+    margin: 60px auto;  
+}
+
+.icon > img {
+    color: #000;
+}
+
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+        
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(/picture/bann-locationcut.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic img{
+        width: 80%;
+        transform: translate(12.5%, 0);
+    }
+    .align-center {
+        align-items: center;
+        justify-content: center;
+        transform: translate(0, 12.5%);
+    }
+    .iframe {
+        width: 600px;
+        height: 450px;
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}

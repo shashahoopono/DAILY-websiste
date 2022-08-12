@@ -1,0 +1,141 @@
+.footer {
+    background-color: #ede0df;
+    width: 100%;
+    padding-top: 2%;
+}
+
+/*=====================mb=====================*/
+/* social media icon */
+.socialMedia{   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+.socialMedia a{
+    margin: 5% 6%;
+    transform: translateY(0);
+}
+.socialMedia a:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+/* SiteMap */
+.ft-logo{
+    margin: 0 auto;
+    width: 100px;
+}
+.pages ul a {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.pages a{
+    text-decoration: none;
+    color: #43649b;
+    font-weight: 500;
+    font-size: 1.em;
+    margin: 5% 0;
+}
+.pages a:hover{
+    color: #666;
+}
+.pages li{
+    margin: 8% 0;
+}
+/* sitemap-logo */
+.pages li img{
+    width: 68px;
+}
+
+/* copyright */
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.copyright p{
+    width: 85%;
+    text-align: center;
+    display: inline-block;
+    color: #666;
+    font-size: 01em;
+    line-height: 1.5;
+}
+.copyright span{
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+/*=====================mb=====================*/
+@media (max-width:576px) {
+    .pages ul{
+        display: none;
+    }
+}
+
+
+/*---common---*/
+@media screen and (min-width:992px) {
+/* icon */
+.socialMedia{   
+    width: 30%;
+    margin: 1% 0;
+}
+.socialMedia a{
+    margin: 2% 3%;
+    transform: translateY(0);
+}
+.socialMedia a:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+/* SiteMap */
+.pages ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.pages li img{
+    width: 68px;
+}
+.pages a{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.pages li{
+    margin: 3% 5%;
+}
+.pages li a:hover{
+    transition: .5s;
+    color: #EF8463;
+}
+
+/* copyright */
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.copyright p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-block;
+    color: #666;
+    line-height: 1.5;
+}

@@ -1,0 +1,181 @@
+/* banner */
+.smallScreen{
+    background-image: url(/picture/mbbanner-contact.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
+
+/* path麵包屑 */
+.path{
+    margin: 15px 10px 15px 0;
+}
+.path ul{
+    list-style: none;
+    display: flex;
+}
+.path li{
+    position: relative;
+    padding: 10px;
+}
+.path li a{
+    color: #666666;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.path a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #e6bebb;
+    transition: 0.4s ease-in-out;
+}
+.path a:hover:after{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.path span{
+    color: #E88C6B;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.path li + li::before{
+    content: '/';
+    color: #D0CDC2;
+    position: absolute;
+    left: 0;
+}
+/* 聯絡我們 */
+/* 表單 */
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+form, .writing{
+    display: flex;
+    flex-direction: column;
+}
+.writing{
+    align-items: flex-end;
+    margin-bottom: 4%;
+}
+form label, input{
+    margin: 2% 0;
+    font-size: 25px;
+}
+form > p{
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid #211E55;
+    margin:5px;
+    padding: 2px;
+}
+input:focus{
+    outline:none;
+    background-color: #43649B;
+}
+textarea:focus{
+    outline:none;
+    background-color: #43649B;
+}
+textarea{
+    margin: 2% 0;
+    height: 100px;
+    border: 1px solid #211E55;
+    resize: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+input{
+    outline:none;
+}
+input:focus{
+    outline:none;
+    background-color: #43649B;
+    color: #FFF;
+}
+textarea:focus{
+    outline:none;
+    background-color: #43649B;
+    color: #FFF;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+.btn{
+    padding: 5px 15px;
+    border-radius: 300px;
+    border: none;
+    font-size: 16px;
+}
+.btn:nth-child(1){
+    color: #fff;
+    background-color: #E88C6B;
+}
+.btn:nth-child(2){
+    color: #666;
+    background-color: #ccc;
+}
+.btn:nth-child(1):hover{
+    color: #fff;
+    background-color: #43649B;
+    cursor: pointer;
+}
+.btn:nth-child(2):hover{
+    color: #fff;
+    background-color: #43649B;
+    cursor: pointer;
+}
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(/picture/bannecut-contact.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic img{
+        width: 80%;
+        transform: translate(12.5%, 0);
+    }
+    .align-center {
+        align-items: center;
+        justify-content: center;
+        transform: translate(0, 12.5%);
+        margin: 0 auto;
+    }
+}

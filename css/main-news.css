@@ -1,0 +1,142 @@
+/* ------ banner ------ */
+.smallScreen{
+    background-image: url(/picture/mbbannernews.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bigScreen{
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main {
+    background-image: url(../picture/newsbg.png);
+}
+/* 文章卡片 */
+article{
+    padding: 3%;
+    margin: 3%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(238, 238, 238, 0.767);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    width: 100%;
+    border-radius: 10px;
+}
+article:hover{
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+article h3{
+    font-size: 30px;
+    color: #E88C6B;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.txt{
+    padding: 2%;
+    margin: 5%;
+}
+.txt p{
+    font-size: 25px;
+    line-height: 1.5;
+    color: #666;
+}
+.txt h3:hover{
+    color: #FFA015;
+}
+.news p:hover {
+    color: #aaa;
+}
+.date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.date h5{
+    margin-left: 2%;
+}
+.readMore{
+    vertical-align: top;
+}
+/* 頁碼 */
+.articlePages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.arrow img{
+    margin: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+button{
+    margin: 10px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+    color: #999;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover{
+    color: #FFA015;
+}
+button:active{
+    border: 1px #aaa solid;
+    color: #aaa;
+    transform: translate(1px,1px);
+}
+
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(/picture/bann-locationcut.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .pic img{
+        width: 80%;
+        transform: translate(12.5%, 0);
+    }
+    .align-center {
+        align-items: center;
+        justify-content: center;
+        transform: translate(0, 12.5%);
+    }
+}
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}

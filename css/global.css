@@ -1,0 +1,265 @@
+/*global*/
+/*插入字體*/
+@font-face {
+    font-family: "jf-openhunin";
+    src: url("../fonts/jf-openhuninn-1.1.woff") format("woff"),
+         url("../fonts/jf-openhuninn-1.1.ttf") format("truetype"),
+         url("../fonts/jf-openhuninn-1.1.eot format") format("embedded-opentype");
+}
+/*共同設定*/
+body{
+    font-family: 'jf-openhunin', '微軟正黑體', "Fredoka", "sans-serif";
+}
+main{
+    padding-bottom: 13%;
+}
+.title{
+    text-align: center;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+.pb-24{
+    padding-bottom: 24px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-90{
+    margin-bottom: 90px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+/*文字大小*/
+h2{
+    font-size: 3.5em;
+    color: #254C75;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+h3{
+    display: inline-block;
+    font-size: 3em;
+    color: #43649B;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+h4{
+    font-size: 1.8em;
+    color: #43649B;
+    font-weight: 500;
+}
+p{
+    font-size: 30px;
+}
+/*置中*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+/*文字強調*/
+strong{
+    font-weight: 600;
+    color: #FBD97A;
+    display: contents;
+}
+
+/* ------ GotoTopbtn ------ */
+.backToTop{
+    position: fixed;
+    width:1em;
+    height:4em;
+    right: 1em;
+    bottom: 2em;
+    text-align: center;
+    line-height: 0.8em;
+    font-weight: 600;
+    color: #211E55;
+    margin-bottom: 5em;
+    animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity .5s 0s;
+    cursor: pointer;
+    display: inline-block;
+}
+.backToTopNone{
+    opacity: 0;
+    transition: opacity .5s 0s;
+}
+.backToTop p{
+    font-size: 0.5em;
+    font-weight: 500px;
+    text-shadow: #FFF 0.1em 0.1em 0.2em
+}
+.backToTop img {
+    width:30px;
+    min-height: 30px;
+}
+/*上下漂浮動畫*/
+@keyframes float{
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    30% {
+        transform: translate(0, -2px);
+    }
+    70% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/* ------ path麵包屑 ------ */
+.path{
+    margin: 15px 10px 15px 0;
+}
+.path ul{
+    list-style: none;
+    display: flex;
+}
+.path li{
+    position: relative;
+    padding: 10px;
+}
+.path li a{
+    color: #666666;
+    font-size: 22px;
+    font-weight: 500;
+}
+.path a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #e6bebb;
+    transition: 0.4s ease-in-out;
+}
+.path a:hover:after{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+}
+.path span{
+    color: #E88C6B;
+    font-size: 22px;
+    font-weight: 500;
+}
+.path li + li::before{
+    content: '/';
+    color: #D0CDC2;
+    position: absolute;
+    left: -5px;
+    font-size: 22px;
+}
+/* ------ 頁尾 ------ */
+.footer {
+    background-color: #ede0df;
+    width: 100%;
+    padding-top: 2%;
+}
+/* socail media icon */
+.socialMedia{   
+    width: 30%;
+    margin: 1% 0;
+}
+.socialMedia a{
+    margin: 2% 3%;
+    transform: translateY(0);
+}
+.socialMedia a:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+/* SiteMap */
+.pages ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.pages li img{
+    width: 68px;
+}
+.pages a{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.pages li{
+    margin: 3% 5%;
+}
+.pages li a:hover{
+    transition: .5s;
+    color: #EF8463;
+}
+/* copyright */
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.copyright p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-block;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media screen and (min-width:992px) {
+    .backToTop {
+        margin: auto;
+        width: 4em;
+        height: 4em;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #211E55;
+        margin:5em auto 7em;
+        animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+    }
+    .backToTopNone{
+        opacity: 0;
+        transition: opacity .5s 0s;
+    }
+    .backToTop p{
+        font-size: 0.5em;
+        font-weight: 500px;
+        text-shadow: #FFF 0.1em 0.1em 0.2em;
+        display: inline-block;
+        margin: 5px auto;
+        
+    }
+    .backToTop img {
+        width:40px;
+        min-height: 40px;
+    }
+}

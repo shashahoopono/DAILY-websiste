@@ -1,0 +1,73 @@
+/* ------ 回頂部按鈕 ------ */
+/*一般*/
+@media (min-width: 992px){
+    .backToTop{
+        position: fixed;
+        width:4.5em;
+        height:4.5em;
+        right: 5em;
+        bottom: 2em;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #211E55;
+        margin-bottom: 5em;
+        animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity .5s 0s;
+        cursor: pointer;
+    }
+    .backToTopNone{
+        opacity: 0;
+        transition: opacity .5s 0s;
+    }
+    @keyframes float{
+        0% {
+            transform: translate(0, 0);
+        }
+        
+        30% {
+            transform: translate(0, -2px);
+        }
+        70% {
+            transform: translate(0, 5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+/* 行動裝置 */
+@media screen and (max-width: 991.98px){
+    .backToTop {
+        margin: auto;
+        width: 4em;
+        height: 4em;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #211E55;
+        margin:5em auto 7em;
+        animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+    }
+    /* 漂浮影格 */
+    @keyframes float{
+        0% {
+            transform: translate(0, 0);
+        }
+        
+        30% {
+            transform: translate(0, -2px);
+        }
+        70% {
+            transform: translate(0, 5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}

@@ -1,0 +1,129 @@
+main {
+    padding: 0;
+}
+/* ------ Topbanner ------ */
+/* banner */
+.smallScreen{
+    background-image: url(/picture/mbbanner-about.jpg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
+/* ------ 關於 ------ */
+.about h2{
+    color: #E88C6B;
+    margin-bottom: 10%;
+}
+.sidePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidePic img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 350px;
+}
+.content h2{
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+}
+.content h3{
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+}
+.txt p {
+    line-height: 1.8;
+    color: #888;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 0.3em;
+    text-align: left;
+    font-size: 1.3em;
+}
+.txt p::first-letter{
+    font-size: 180%;
+}
+/* concept */
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 2%;
+    width: 500px;
+}
+.threePoints{
+    background-image: url(../picture/aboutbg-1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.threePoints h2{
+    color: #E88C6B;
+    padding-top: 80px;
+}
+.item h3{
+    color: #43649B;
+}
+.item img{
+    margin-bottom: 25px;
+}
+.item p{
+    text-align: left;
+    font-size: 1.5em;
+    color: #888;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+/*RWD*/
+/*mobile*/
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(/picture/bannercut-about.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+    
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+

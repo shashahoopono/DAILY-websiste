@@ -1,0 +1,179 @@
+/* banner */
+.smallScreen{
+    background-image: url(../picture/banner-menu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bigScreen{
+    display: none;
+}
+/* 分類目錄 */
+
+.catalog{
+    display: flex;
+}
+label{
+    margin: auto;
+    text-align: center;
+    background-color: #fefff6;
+    border: 1px solid #E88C6B;
+    border-radius: 300px;
+    color: #E88C6B;
+    transition: .5s;
+    cursor: pointer;
+}
+.catalog > input{
+    display: none;
+}
+input:checked + label.btn{
+    background-color: #E88C6B;
+    border: 1px solid #E88C6B;
+    color: #fefff6;
+}
+/* 商品卡片 */
+.products{
+    padding: 5% 0;
+}
+
+.card{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 10%);
+}
+.productsCard img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.productsTitle{
+    padding-top: 2%;
+}
+.productsTitle p{
+    color: #666;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 5%;
+    text-align: center;
+}
+.productsTitle p span{
+    color: #FFA015;
+    font-weight: 700;
+}
+
+
+
+/* 頁碼 */
+.articlePages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.arrow img{
+    margin: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+button{
+    margin: 10px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+    color: #999;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover{
+    color: #FFA015;
+}
+button:active{
+    border: 1px #aaa solid;
+    color: #aaa;
+    transform: translate(1px,1px);
+}
+.center {
+        margin-bottom: 30px;
+    }
+@media screen and (max-width:991px) {
+    .pt-15{
+        padding-top: 15%;
+    }
+    .card{
+        box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 12%);
+    }
+    .centerMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* 分類目錄 */
+    label{
+        padding: 3% 5%;
+    }
+    /* 商品描述 */
+    .description{
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .width{
+        max-width: 800px;
+        margin: auto;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    /* banner */
+    .banner img{
+        max-width: 100%;
+    }
+    .bigScreen{
+        display: block;
+        background-image: url(/picture/bannercut-about1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 40vh;
+    }
+    .smallScreen{
+        display: none;
+    }
+    /* 分類目錄 */
+    label{
+        padding: 15px 25px;
+    }
+    /* 商品卡片 */
+    .card{
+        transform: translateY(0);
+        transition: .5s;
+    }
+    .card:hover{
+        box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 15%);
+        transform: translateY(-4px);
+    }
+    .center {
+        margin-bottom: 80px;
+    }
+    section{
+        margin: 50px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .width{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
