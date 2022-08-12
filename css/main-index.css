@@ -171,13 +171,14 @@
 .products{
     padding-bottom: 0;
 }.productsBg{
-    background-image: url("/picture/bigfood.png");
+    background-image: url("../picture/bigfood.png");
     background-repeat: repeat;
     background-size: cover;
     max-height:100vh
 }
 .goods{
     max-width: 400px;
+    margin: 10px auto;
 }
 .goods .pic {
     width: 70%;

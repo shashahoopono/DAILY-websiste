@@ -76,6 +76,30 @@
     font-size: 0.7em;
     line-height: 1.5;
 }
+
+.pages ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.pages li img{
+    width: 68px;
+}
+.pages a{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.pages li{
+    margin: 3% 5%;
+}
+.pages li a:hover{
+    transition: .5s;
+    color: #EF8463;
+}
+
 /*=====================mb=====================*/
 @media (max-width:576px) {
     .pages ul{
@@ -86,7 +110,7 @@
 
 /*---common---*/
 @media screen and (min-width:992px) {
-/* icon */
+    /* icon */
 .socialMedia{   
     width: 30%;
     margin: 1% 0;
@@ -138,4 +162,5 @@
     display: inline-block;
     color: #666;
     line-height: 1.5;
+}
 }

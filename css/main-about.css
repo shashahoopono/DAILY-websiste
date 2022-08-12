@@ -4,7 +4,7 @@ main {
 /* ------ Topbanner ------ */
 /* banner */
 .smallScreen{
-    background-image: url(/picture/mbbanner-about.jpg.png);
+    background-image: url(../picture/mbbanner-about.jpg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ main {
     }
     .bigScreen{
         display: block;
-        background-image: url(/picture/bannercut-about.jpg);
+        background-image: url(../picture/bannercut-about.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
