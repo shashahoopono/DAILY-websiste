@@ -175,6 +175,9 @@ button:active{
         transform: translateY(0);
         transition: .5s;
     }
+    .pic {
+       height: 333px;
+    }
     .card:hover{
         box-shadow: 0 0.1rem 0.3rem 0 rgb(0 0 0 / 15%);
         transform: translateY(-4px);
