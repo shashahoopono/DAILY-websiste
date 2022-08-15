@@ -24,7 +24,7 @@ main {
 }
 .bannerTxt h2{
     color: #fff;
-    text-shadow: 0 0 0.1em rgb(37, 35, 35), 0 0 0.2em rgb(32, 29, 29);
+    text-shadow: 0 0 0.1em rgb(20, 20, 20);
     text-align: center;
     display: block;
 }

@@ -1,228 +1,239 @@
-.width{
-    width: 100%;
+.width {
+  width: 100%;
 }
 
 /* ------ FirstPage ------ */
 .mainTxt .first {
-    height: 350px;
+  height: 350px;
 }
-.mainTxt .first{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,75%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mainTxt .first {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 75%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.animation{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    margin: 20px auto;
+.animation {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 20px auto;
 }
 /*slogan*/
-.mainTxt .first .animation h2{
-    color: #fff;
-    letter-spacing: 3px;
-    opacity: 85%;
-    margin-bottom: 20px;
-    display: inline-block;
-    text-align: center;
-    font-size: 40px;
+.mainTxt .first .animation h2 {
+  color: #fff;
+  letter-spacing: 3px;
+  opacity: 85%;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  font-size: 40px;
 }
 /*副標*/
-.mainTxt .first .animation p{
-    color: #fff;
-    font-size: 30px;
-    opacity: 85%;
-    text-align: center;
-    display: inline-block;
+.mainTxt .first .animation p {
+  color: #fff;
+  font-size: 30px;
+  opacity: 85%;
+  text-align: center;
+  display: inline-block;
 }
 /*learnmore按鈕*/
-.mainTxt .first button{
-    display: inline-block;
-    cursor: pointer;
-    background-color: #EF8463;
-    margin: 20px auto;
-    padding: 10px 20px;
-    border-radius: 300px;
-    border: none;
+.mainTxt .first button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ef8463;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 300px;
+  border: none;
 }
-.mainTxt .first .animation button a{
-    color: #fff;
-    font-weight: 700;
-    font-family: 'jf-openhunin', '微軟正黑體', "Fredoka", "sans-serif";
-    letter-spacing: 0.1em;
-    font-size: 1.5em;
-    margin: 5px;
+.mainTxt .first .animation button a {
+  color: #fff;
+  font-weight: 700;
+  font-family: "jf-openhunin", "微軟正黑體", "Fredoka", "sans-serif";
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  margin: 5px;
 }
-.animation button:hover{ 
-    background-color: #fff;
+.animation button:hover {
+  background-color: #fff;
 }
-.first .animation .button:hover a{ 
-    background-color: #fff;
-    color: #EF8463;
+.first .animation .button:hover a {
+  background-color: #fff;
+  color: #ef8463;
 }
 
 /*socialmediaIcon*/
-.mainTxt .socialMedia{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 15%;
-    width: 60px;
-    position: fixed;
-    background-color: rgba(67, 100, 155, 0.3);
-    border-radius: 0px 20px 20px 0px;
-    padding: 5px 3px; 
+.mainTxt .socialMedia {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  width: 60px;
+  position: fixed;
+  background-color: rgba(67, 100, 155, 0.3);
+  border-radius: 0px 20px 20px 0px;
+  padding: 5px 3px;
 }
-.mainTxt .socialMedia a{
-    transform: translateY(0);
-    width: 32px;
-    padding: 4px;
+.mainTxt .socialMedia a {
+  transform: translateY(0);
+  width: 32px;
+  padding: 4px;
 }
-.mainTxt .socialMedia a:hover{
-    transform: translateY(-5px);
-    transition: .5s;
+.mainTxt .socialMedia a:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
 /*3point*/
-.wrap{
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.threePoints {
+  background-image: url(../picture/conceptimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+.title {
+  line-height: 1.3;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item h3 {
+  color: #000000;
+  font-size: 2em;
+}
+.threePoints img {
+  width: 30%;
+}
+/*News*/
+.itemN {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.itemN.article {
+  max-width: 70%;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border: 1px rgb(212, 212, 212) solid;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: none;
+}
+.itemN.article img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+}
+.itemN .txt {
+  margin: 2% 5%;
+}
+.itemN h4 {
+  text-align: left;
+  margin: 15px 0;
+  line-height: 1.5;
+  flex-grow: 1;
+  text-shadow: 0 0 0.1em #b6b0b0, 0 0 0.2em #b6b0b0;
+  font-size: 25px;
+}
+.txt p {
+  line-height: 1.7;
+  text-align: justify;
+  font-size: 20px;
+  padding: 5px 10px;
+  flex-grow: 1;
+  font-weight: normal;
+}
+.txt a {
+  text-decoration: none;
+  color: #666666;
+  display: inline-block;
+}
+.itemN .txt h4:hover,
+.item .txt p:hover {
+  color: #ef8463;
+}
+/*主打*/
+.products {
+  padding-bottom: 0;
+}
+.productsBg {
+  background-image: url("../picture/bigfood.png");
+  background-repeat: repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
+.goods {
+  max-width: 400px;
+  margin: 10px auto;
+}
+.goods .pic {
+  width: 70%;
+  margin: 0 auto;
+}
+.goods .pic img {
+  border-radius: 15px;
+}
+.name h4 {
+  margin: 5% 5%;
+  text-align: center;
+  color: c;
+  text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff;
+  font-size: 30px;
+  color: #ef8463;
+}
+.name P {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 1% 5%;
+  color: #666666;
+  font-weight: 500;
+  padding: 0 10px;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  .wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 5%;
-}
-.threePoints{
-    background-image: url(../picture/conceptimg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-}
-.title{
-    line-height: 1.3;
-}
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.item h3{
+  }
+
+  .item img {
+    width: 15%;
+  }
+
+  .item h3 {
     color: #000000;
-    font-size: 2em;
-}
-.threePoints img{
-    width: 30%;
-}
- /*News*/
-.itemN{
-    margin: 0 auto;
-    box-sizing: border-box ;
-}
-.itemN.article{
-    max-width:70%;
-    padding-bottom: 20px;
-    background-color: #fff;
-    border: 1px  rgb(212, 212, 212) solid;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: .5s;
-    box-shadow: none;
-}
-.itemN.article img{
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-bottom: 20px;
-}
-.itemN .txt{
-    margin: 2% 5% ;
-}
-.itemN h4{
-    text-align: left;
-    margin: 15px 0;
-    line-height: 1.5;
-    flex-grow: 1;
-    text-shadow: 0 0 0.1em #b6b0b0,0 0 0.2em #b6b0b0;
-    font-size: 25px;
-}
-.txt p{
-    line-height: 1.7;
-    text-align: justify;
-    font-size: 20px;
-    padding: 5px 10px;
-    flex-grow: 1;
-    font-weight: normal;
-}
-.txt a{
-    text-decoration: none;
-    color: #666666;
-    display: inline-block;
-}
-.itemN .txt h4:hover, .item .txt p:hover{
-    color: #EF8463;
-}
- /*主打*/
-.products{
-    padding-bottom: 0;
-}.productsBg{
-    background-image: url("../picture/bigfood.png");
-    background-repeat: repeat;
-    background-size: cover;
-    max-height:100vh
-}
-.goods{
-    max-width: 400px;
-    margin: 10px auto;
-}
-.goods .pic {
-    width: 70%;
-    margin: 0 auto;
-}
-.goods .pic img{
-    border-radius: 15px;
-}
-.name h4{
-    margin: 5% 5%;
-    text-align:center;
-    color: c;
-    text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF;
-    font-size: 30px;
-    color: #EF8463;
-}
-.name P{
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.7;
-    text-align: justify;
-    margin: 1% 5%;
-    color: #666666;
-    font-weight: 500;
-    padding: 0 10px;
-    background-color: rgb(255,255,255, .4);
-    border-radius: 5px;
-}
-@media (max-width:992px) {
-    .wrap{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 5%;
-    }
+  }
 
-    .item img {
-        width: 15%;
-    }
+  /*socialmediaIcon*/
+  .mainTxt .socialMedia {
+    display:none;
+  }
 
-    .item h3{
-        color: #000000;
-    }
-    
+  .name P {
+    text-align: center;
+    font-size: 16px;
+  }
 }

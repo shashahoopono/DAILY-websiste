@@ -130,6 +130,7 @@
     background-image: url(../picture/bgimg-mb-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     height: 100vh;
 }
